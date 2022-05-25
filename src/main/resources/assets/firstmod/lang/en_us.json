@@ -1,3 +1,10 @@
 {
-  "item.firstmod.staff": "Staff"
+  "item.firstmod.staff": "Staff",
+  "item.firstmod.enlighteningrod": "Enlightening Rod",
+  "block.firstmod.altar": "Altar",
+  "itemGroup.magictab": "Magic",
+  "item.tutorialmod.dowsing_rod.no_valuables": "No valuable found",
+  "tooltip.enlightening_rod.shift" : "Destroy!",
+  "tooltip.enlightening_rod": "Press §4Shift§r to display",
+  "tooltip.stone_door": "A fucking stone door"
 }

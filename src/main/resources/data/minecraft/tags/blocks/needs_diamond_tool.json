@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "firstmod:tungsten_door",
+    "firstmod:tungsten_trapdoor",
+    "firstmod:tungsten_ore",
+    "firstmod:tungsten_block",
+    "firstmod:raw_tungsten_block",
+    "firstmod:tungsten_stairs",
+    "firstmod:tungsten_wall",
+    "firstmod:tungsten_slab"
+  ]
+}
