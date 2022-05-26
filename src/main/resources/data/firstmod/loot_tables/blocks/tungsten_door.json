@@ -10,7 +10,7 @@
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "minecraft:tungsten_door",
+              "block": "firstmod:tungsten_door",
               "properties": {
                 "half": "lower"
               }

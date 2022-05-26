@@ -34,20 +34,20 @@ public class ModBlocks {
         - Trapdoor
      */
 
-    public static final RegistryObject<Block> TUNGSTEN_DOOR = registerBlock("tungsten_door", () -> new DoorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(7f).noOcclusion().explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
+    public static final RegistryObject<DoorBlock> TUNGSTEN_DOOR = registerBlock("tungsten_door", () -> new DoorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(7f).noOcclusion().explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
 
     public static final RegistryObject<Block> TUNGSTEN_ORE = registerBlock("tungsten_ore", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(6f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
     public static final RegistryObject<Block> TUNGSTEN_BLOCK = registerBlock("tungsten_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
 
-    public static final RegistryObject<Block> TUNGSTEN_STAIRS = registerBlock("tungsten_stairs", () -> new StairBlock(() -> ModBlocks.TUNGSTEN_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
+    public static final RegistryObject<StairBlock> TUNGSTEN_STAIRS = registerBlock("tungsten_stairs", () -> new StairBlock(() -> ModBlocks.TUNGSTEN_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
 
-    public static final RegistryObject<Block> TUNGSTEN_SLAB = registerBlock("tungsten_slab", () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
+    public static final RegistryObject<SlabBlock> TUNGSTEN_SLAB = registerBlock("tungsten_slab", () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
 
-    public static final RegistryObject<Block> TUNGSTEN_WALL = registerBlock("tungsten_wall", () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
+    public static final RegistryObject<WallBlock> TUNGSTEN_WALL = registerBlock("tungsten_wall", () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
 
     public static final RegistryObject<Block> RAW_TUNGSTEN_BLOCK = registerBlock("raw_tungsten_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
 
-    public static final RegistryObject<Block> TUNGSTEN_TRAPDOOR = registerBlock("tungsten_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops()), ModCreativeTab.MAGIC_TAB);
+    public static final RegistryObject<TrapDoorBlock> TUNGSTEN_TRAPDOOR = registerBlock("tungsten_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(7f).explosionResistance(7f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeTab.MAGIC_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

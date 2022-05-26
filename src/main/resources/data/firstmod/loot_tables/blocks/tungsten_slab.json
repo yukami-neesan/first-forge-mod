@@ -13,7 +13,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "minecraft:tungsten_slab",
+                  "block": "firstmod:tungsten_slab",
                   "properties": {
                     "type": "double"
                   }
